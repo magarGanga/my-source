@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 script{
-                    shgit credentialsId: '22d727d6-8992-478d-b6c5-fafbb1db63e8', url: 'https://github.com/magarGanga/my-source.git'  
+                    git credentialsId: '22d727d6-8992-478d-b6c5-fafbb1db63e8', url: 'https://github.com/magarGanga/my-source.git'  
 
                 }
             }
