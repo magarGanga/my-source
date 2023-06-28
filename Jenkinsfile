@@ -48,7 +48,7 @@ pipeline {
         stage('Trigger ManifestUpdate') {
             steps {
                 echo "Triggering UpdatemanifestJob"
-                build job: 'UpdatemanifestJob-ArgoCD', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
+                build job: 'UpdatemanifestJob-ArgoCD', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_ID)]
             }           
         }
 
