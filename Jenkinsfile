@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        AWS_ACCOUNT_ID="770681373682"
+        AWS_ACCOUNT_ID="445967158734"
         AWS_DEFAULT_REGION="us-east-1" 
         IMAGE_REPO_NAME="test123"
         IMAGE_TAG="latest" 
